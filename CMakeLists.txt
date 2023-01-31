@@ -8,8 +8,8 @@ project(LOAD_HIGHS LANGUAGES CXX)
 # Make project-provided Find modules available
 list(APPEND CMAKE_MODULE_PATH "${CMAKE_CURRENT_SOURCE_DIR}/cmake")
 
-# set(HiGHS_DIR /Users/ivet/code/HiGHS/build)
-set(HiGHS_DIR /Users/ivet/installs/highs/lib/cmake/highs/)
+set(HiGHS_DIR /Users/ivet/code/HiGHS/build)
+# set(HiGHS_DIR /Users/ivet/installs/highs/lib/cmake/highs/)
 
 find_package(Threads REQUIRED)
 find_package(HiGHS REQUIRED)

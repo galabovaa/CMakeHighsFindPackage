@@ -14,3 +14,5 @@ find_package(HIGHS REQUIRED)
 add_executable(main call_from_cpp.cc)
 
 target_link_libraries(main highs::highs)
+
+install(TARGETS main)

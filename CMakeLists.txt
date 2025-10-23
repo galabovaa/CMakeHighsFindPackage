@@ -9,6 +9,11 @@ project(LOAD_HIGHS LANGUAGES CXX)
 # set(HIGHS_DIR /Users/ivet/installs/highs/lib/cmake/highs/)
 
 # find_package(Threads REQUIRED)
+set(USE_HIPO OFF)
+if (USE_HIPO)
+    find_package(BLAS REQUIRED)
+endif()
+
 find_package(HIGHS REQUIRED)
 
 add_executable(main call_from_cpp.cc)
